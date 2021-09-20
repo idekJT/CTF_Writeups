@@ -5,7 +5,7 @@ Folder withe name in format: "{CTF_Name} - {Year}"
   |
   |
   |
-  -----> Folder for each category "{Catageory_Name}"         
+  -----> Folder for each category "{Category_Name}"         
             |
             |
             |
