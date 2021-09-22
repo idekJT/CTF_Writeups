@@ -2,9 +2,9 @@
 
 **Author:** AOx0 :: Alejandro
 
+> how'd you get this in the first place :eyes: dids you has logger on me?
 
-
-The file `tippytappies.pcapng` has extension `pcapng` which is a PCAP Next Generation Capture File Format that we can open with *Wireshark*.
+The attached file, `tippytappies.pcapng`, has extension `pcapng` which is a PCAP Next Generation Capture File Format that we can open with *Wireshark*.
 
 
 
@@ -12,19 +12,25 @@ The file `tippytappies.pcapng` has extension `pcapng` which is a PCAP Next Gener
 
 
 
-I messed around understanting the structure of the packages when I found this:
+I was messing around, understanting the structure of the packages, when I found this:
 
 ![](https://i.imgur.com/OTiCXBC.png)
 
-That package information make very clear that this is a file capturing some keyboard's actions. I decided to add `Keys` as a column.
+That package information plus the description of the challenge and the Protocol of the packages made it  very clear that this is a file of someone's keyboard actions. 
+
+
+
+So I decided to add `Keys` as a column.
 
 ![](https://i.imgur.com/QRQ29rr.png)
 
-There are lots of packages, the ones from `host -> 2.9.1` that do not contain any pressed keys information. So i filtered so I can only see packages that do contain information.  
+There were lots of packages that do not contain any pressed-key information. Like all  `host -> 2.9.1`. This made everything pretty difficult to analyze.
+
+Thus, I filtered the packages so I could only see the ones that did contain information.  
 
 ![](https://i.imgur.com/jkLPEZx.png)
 
-Then I just reviewed every single remaining package looking for what key the user pressed. This was faster than you may think lol, just spam the `down-key`.
+Then I just reviewed every single remaining package, looking for what key was registered. This was faster than you may think lol, I just spammed the `down-key` arrow.
 
 ![](https://i.imgur.com/PcNxCis.png)
 
@@ -44,5 +50,5 @@ Example:
 | 10   | t        |
 | ...  | ...      |
 
-So, he updated the repositories, installed weechat, connected to a channel and then sent a message to someguy with the flag.
+So, he updated the repositories, installed weechat, connected to an irc channel and then sent a message to some guy with the flag.
 
